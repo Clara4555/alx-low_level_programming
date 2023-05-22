@@ -4,14 +4,14 @@
   *struct dog - my dog info
   *@name: First name
   *@age:age
-  *@owner: my name
+  *@owner: owners name
   *Description: struct dog with the following elements:
   */
 struct dog
 {
 	char *name;
 	float age;
-	char owner;
+	char *owner;
 };
 /**
   *dog_t - typedef for struct dog
