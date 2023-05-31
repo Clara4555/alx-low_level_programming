@@ -3,17 +3,22 @@
 #include <stdio.h>
 /**
   *print_dog - function that prints a struct dog
-  *@d: struct dog to be printed
+  *@d: pointer  to be struct
   *
-  *
+  *Return: void
   */
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
-		return;
-	if (d->name == NULL)
-		d->name = "(nil)";
-	if (d->owner == NULL)
-		d->owner = "(nil)";
-	printf("Name: %s\n Age: %f\n owner: %s\n", d->name, d->age, d->owner);
+	if (d != NULL)
+	{
+		if (d->name != NULL)
+			printf("Name: %s\n", d->name);
+		else
+			printf("Name: (nil)\n");
+		printf("Age: %.6f\n", d->age);
+		if (d->owner != NULL)
+			printf("Owner: %s\n", d->owner);
+		else
+			printf("Owner: (nil)\n");
+	}
 }
