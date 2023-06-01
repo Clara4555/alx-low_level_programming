@@ -1,18 +1,20 @@
 #include "main.h"
 /**
-  *_strchr - Entry point
-  *@s: input
-  *@c: input
-  *Return: Always 0 (success)
+  *_strchr - searches for first occurence in a string
+  *@s: value to inputted
+  *@c: value to be inputted
+  *
+  *Return: 0 always
+  *
   */
 char *_strchr(char *s, char c)
 {
-	int a = 0;
+	int v;
 
-	for (; s[a] >= '\0'; a++)
+	for (; s[v] >= '\0'; v++)
 	{
-		if (s[a] == c)
-			return (&s[a]);
+		if (s[v] == c)
+			return (&s[v]);
 	}
 	return (0);
 }

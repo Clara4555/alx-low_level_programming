@@ -1,8 +1,14 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 /**
-  *_isupper - fuction to write upper case letters
-  *@c: character to check
-  *Return: 0 or 1
+  *_isupper - functions that prints uppercase
+  *
+  *@c: charcter
+  *
+  *Return: 0 always  success otherwise 1
+  *
+  *
   */
 int _isupper(int c)
 {

@@ -1,7 +1,9 @@
-#include "main.h"
+#include"main.h"
+#include <stdio.h>
 /**
-  *_puts - function to print string followed with a new line
-  *@str: string to print
+  *_puts - function that prints a string followed by/n
+  *@str: string to be printed
+  *Return: 0 alway successful
   */
 void _puts(char *str)
 {
@@ -9,5 +11,6 @@ void _puts(char *str)
 	{
 		_putchar(*str++);
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
+

@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  *_strstr - Entry point
-  *@haystack: input
-  *@needle: input
-  *Return: always 0 (success)
+ *_strstr - searches a given substring in the main string
+ *@needle: input
+ *@haystack: input
+ *Return: 0 always
   */
 char *_strstr(char *haystack, char *needle)
 {

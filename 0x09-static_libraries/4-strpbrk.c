@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  *_strpbrk - Entry point
+  *_strpbrk - find the first character of first string
   *@s: input
   *@accept: input
-  *Return: always 0 (success)
+  *Return: 0 always
   */
 char *_strpbrk(char *s, char *accept)
 {
@@ -11,7 +11,7 @@ char *_strpbrk(char *s, char *accept)
 
 	while (*s)
 	{
-		for (a = 0; accept[a]; a++)
+		for (s = 0; accept[a]; a++)
 		{
 			if (*s == accept[a])
 				return (s);

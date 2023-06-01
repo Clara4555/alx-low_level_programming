@@ -1,22 +1,22 @@
 #include "main.h"
 /**
-  *_strcmp - function to compare string strings values
-  *@s1: input value
-  *@s2: input value
-  *Return:s[a] - s[a]
+  *_strcmp - function that compares string (comparism)
+  *@s1: value
+  *@s2: value
+  *Return: 0 always success
   */
 int _strcmp(char *s1, char *s2)
 {
-	int a;
+	int v;
 
-	a = 0;
-	while (s1[a] != '\0' && s2[a] != '\0')
+	v = 0;
+	while (s1[v] != '\0' && s2[v] != '\0')
 	{
-		if (s1[a] != s2[a])
+		if (s1[v] != s2[v])
 		{
-			return (s1[a] - s2[a]);
+			return (s1[v] - s2[v]);
 		}
-		a++;
+		v++;
 	}
 	return (0);
 }
