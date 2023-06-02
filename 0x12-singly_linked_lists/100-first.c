@@ -1,8 +1,9 @@
 #include <stdio.h>
-void print_message_attributor(void);
+
+void print_message_attributor(void) __attribute__((constructor));
 /**
   *print_message_attributor -function where the printing taskes place
-  *
+  *Return: always 0
   */
 void print_message_attributor(void)
 {
